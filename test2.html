@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+div
+{
+border:2px solid red;
+width:300px;
+margin:100px;
+}
+
+
+
+
+</style>
+<script>
+
+
+let studName=["asha","pooja","kavita","komal"];
+
+function searchName()
+{let  nm= prompt("enter ur nzme");
+let f=0;
+for(i=0;i<studName.length;i++)
+{
+if(studName[i]==nm)
+{
+f=1;
+break;
+}}
+if(f==1)
+{
+console.log("yes.....");
+}
+else
+{
+console.log("no");
+}
+}
+
+
+
+
+
+
+
+
+
+function countNum()
+{
+    
+   let c1=0,c2=0;
+   for(i=0;i<studMarks.length;i++)
+{
+if(studMarks[i]>=50)
+{
+c1=c1+1;
+}
+else
+{
+c2=c2+1;
+}
+}
+alert(c1);
+alert(c2);
+}
+
+
+
+
+
+function handleLoop()
+{  let i;
+for( i=1;i<=10;i=i+1)
+{
+console.log(i);
+}
+}
+function HandleFact()
+{
+   let f=1,n;
+n=document.getElementById("t1").value;
+  for(i=1;i<=n;i++)
+{
+f=f*i;
+}
+alert(f);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<div>
+<button onclick="searchName()"> Search </button>
+<button onclick="countNum()"> count</button>
+<input type="text" id="t1">
+<button onclick="handleLoop()">Loop </buuton>
+
+<button onclick="HandleFact()">FAct </buuton>
+
+</div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
